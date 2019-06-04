@@ -1,0 +1,34 @@
+package com.scala.inherit
+
+class HierInherit {
+  def getInterest() = {
+    0
+  }
+
+}
+class CITI extends HierInherit{
+  override def getInterest(): Int = {
+    8
+  }
+}
+class Barclays extends HierInherit{
+  override def getInterest(): Int = super.getInterest()
+
+}
+class HDFC extends HierInherit{
+  override def getInterest(): Int = {
+    9
+  }
+}
+
+object Bank{
+  def main(args:Array[String]): Unit ={
+    val HD = new HDFC()
+    val ba = new Barclays()
+    val CI = new CITI()
+
+    println ("bank loan of HDFC is " + HD.getInterest())
+    println("bank loan of Barclays is " + ba.getInterest())
+    println("bank loan of CITI is " + CI.getInterest())
+  }
+}
