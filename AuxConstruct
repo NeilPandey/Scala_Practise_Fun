@@ -1,0 +1,19 @@
+package com.class1.object1
+
+class AuxConstruct(E_ID:Int, P_Name:String) {
+
+  var age:Int = 0;
+  def showEle(): Unit = {
+println(E_ID+ " "+ P_Name + " "+ age)
+  }
+def this(E_ID:Int, P_Name:String, age:Int){
+this(E_ID,P_Name) //calling primary constructor
+  this.age = age;
+}
+}
+object AuxObj{
+  def main(args:Array[String]): Unit ={
+    val SAux = new AuxConstruct(100,"NDA", 59)
+    SAux.showEle()
+  }
+}
