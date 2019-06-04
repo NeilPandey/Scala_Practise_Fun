@@ -1,0 +1,28 @@
+package com.scala.inherit.com.scala.abstract1
+
+//abstract class example with abstract method
+
+abstract class MyAbs {
+
+def vehicle(){
+
+}
+}
+class My extends MyAbs{
+  override def vehicle(): Unit ={   //override key is must
+    println("my bike has an immense feature")
+  }
+}
+class My1 extends MyAbs{
+  override def vehicle(): Unit ={
+    println("my car is vintage")
+  }
+}
+object M1{
+  def main(args:Array[String]): Unit ={
+    val m = new My()
+    val m1 = new My1()
+    m.vehicle()
+    m1.vehicle()
+  }
+}
