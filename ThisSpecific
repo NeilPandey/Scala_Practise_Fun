@@ -1,0 +1,20 @@
+package com.class1.object1
+
+class ThisSpecific {
+var id:Int = 0    //instance variable
+  var name:String = ""      //instance variable
+  def this(id:Int, name:String){  //funtion
+    this()
+    this.id = id
+    this.name = name
+  }
+  def fun(): Unit ={
+println(id + " "+ name)
+  }
+}
+object ThisS{
+  def main(args:Array[String]): Unit ={
+    val T = new ThisSpecific(10,"bob")
+    T.fun()
+  }
+}
