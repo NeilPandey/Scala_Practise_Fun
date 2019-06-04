@@ -1,0 +1,19 @@
+package com.class1.object1
+
+class Sample {
+  //val a:Double = 10.00
+  //val b:Double = 11.00
+
+  def show(a:Int, b: Int)= {a+b}
+}
+object S1{
+
+  def main(args:Array[String]): Unit ={
+
+    val S1 = new Sample
+    val S2= new Sample
+    println(S1.show(10,31))
+    println(S2.show(9,12))
+
+  }
+}
