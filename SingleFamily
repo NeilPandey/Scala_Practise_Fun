@@ -1,0 +1,20 @@
+package com.scala.inherit
+
+//single level inheritence
+
+class SingleFamily {                  //parent class
+  var salary:Double = 10000
+
+}
+class Child extends SingleFamily{
+  var increment:Double = 15
+  println ("my salary for 2019 "+ salary)
+  println("my bonus for the year 2019 " + increment)
+}
+
+object Ch{
+
+  def main(args:Array[String]): Unit ={
+    new Child()         //if no function derived, then call class
+  }
+}
