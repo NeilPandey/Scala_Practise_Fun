@@ -1,0 +1,13 @@
+package com.class1.object1
+
+object PatMatch {
+  def main(args: Array[String]): Unit = {
+
+    val a = "ten"
+    a match{
+      case "one" => println("this is one")
+      case "ten" => println("this is second")
+      case _ => println("not in list")
+    }
+  }
+}
