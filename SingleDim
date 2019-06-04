@@ -1,0 +1,17 @@
+package com.com.scala.collection
+
+class SingleDim {
+  val arr = (1 to 10).toArray
+  def show(): Unit ={
+    for(i <- arr){
+      println(i)}
+      println("collect the last element from index " + arr(9))
+  }
+}
+
+object Single {
+  def main(args:Array[String]): Unit ={
+    val f = new SingleDim
+    f.show()
+  }
+}
