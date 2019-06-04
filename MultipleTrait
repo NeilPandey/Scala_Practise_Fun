@@ -1,0 +1,32 @@
+package com.com.traits.scala
+
+trait MultipleTrait {
+
+  def print(): Unit ={
+
+  }
+
+}
+trait PolyTrait{
+  def show(): Unit ={
+
+  }
+}
+
+class CallTrait extends MultipleTrait with PolyTrait{
+
+  override def print(): Unit ={
+    println("this is calling first trait")
+  }
+
+  override def show(): Unit ={
+    println("this is calling second trait")
+  }
+}
+object CMP{
+  def main(args:Array[String]): Unit ={
+    val c = new CallTrait()
+   c.print()
+    c.show()
+  }
+}
