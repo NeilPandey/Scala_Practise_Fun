@@ -1,0 +1,20 @@
+package com.class1.object1
+
+//companion class and companion object
+
+class Comp {
+  def hello(): Unit ={
+    println("this is comp class")
+  }
+
+
+}
+object Comp {
+  def main(args:Array[String]): Unit ={
+    new Comp().hello()
+    println("this is comp object")
+
+  }
+
+
+}
