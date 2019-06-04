@@ -1,0 +1,18 @@
+package com.class1.object1
+
+//primary constructor
+
+class PrimCons(a:Int, b:String) {
+println("checking behaviour of compiler") //default
+def showDetails()= {
+  println("age " + a + " Name " + b)
+}
+}
+object Pri{
+  def main(args:Array[String]): Unit ={
+
+    val P = new PrimCons(29, "Bob")
+    P.showDetails();
+
+  }
+}
