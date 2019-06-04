@@ -1,0 +1,25 @@
+package com.scala.inherit
+
+//Field overriding
+
+class FieldOver {
+    val speed:Int = 50
+
+}
+class Fi extends FieldOver{
+
+  override val speed:Int = 100
+
+  final def fun1(): Unit = {
+    println(speed)
+  }
+}
+object Fie{
+  def main(args:Array[String]): Unit ={
+   // new Fi
+    val F = new Fi
+
+    F.fun1()
+
+  }
+}
