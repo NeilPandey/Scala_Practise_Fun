@@ -1,0 +1,33 @@
+package com.com.traits.scala
+
+//scala trait mixins example
+//always abstract class should be called before trait
+
+trait TraitMixin {
+  def cricket(): Unit =
+  {
+
+  }
+}
+
+abstract class TraitAbs{
+  def football(): Unit ={
+
+  }
+}
+class Hybrid extends TraitAbs with TraitMixin {
+  override def cricket(): Unit ={
+    println("this is world cup cricekt")
+  }
+
+  override def football(): Unit = {
+    println("this is fifa 2021")
+  }
+}
+object Hyb{
+  def main(args:Array[String]): Unit ={
+    val H = new Hybrid()
+    H.cricket()
+    H.football()
+  }
+}
