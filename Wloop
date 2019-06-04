@@ -1,0 +1,12 @@
+package com.class1.object1
+
+object Wloop {
+  def main(args: Array[String]): Unit = {
+    var a = 10;
+    while (true) {
+      println(a)
+      a = a + 2
+    }
+  }
+
+}
