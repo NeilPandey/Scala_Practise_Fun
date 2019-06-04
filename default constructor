@@ -1,0 +1,14 @@
+package com.class1.object1
+
+//default constructor
+
+class Construct {
+  println("this is default constructor")
+
+}
+object C1 {
+  def main(args:Array[String]): Unit ={
+  new Construct()
+
+  }
+}
