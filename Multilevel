@@ -1,0 +1,21 @@
+package com.scala.inherit
+
+class Multilevel {
+  var NDA:Int = 211
+
+}
+class B extends Multilevel{
+
+  var UPA:Int = 160
+}
+class C extends B{
+
+  var third_front:Int = 222
+  println(NDA + " NDA gets," + UPA + " UPA gets, " + third_front
+  + " third_front gets ")
+}
+object E_result{
+  def main(args:Array[String]): Unit ={
+    new C()
+  }
+}
