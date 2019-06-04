@@ -1,0 +1,13 @@
+package com.class1.object1
+
+object FunCallCase {
+  def main(args: Array[String]): Unit = {
+    var res = search("hello")
+    println(res)
+  }
+  def search(a:Any) = a match {
+    case 1 => println("this is first")
+    case "hello" => println("hello case")
+    case _ => println("this is not in list")
+  }
+}
