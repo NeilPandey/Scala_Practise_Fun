@@ -1,0 +1,20 @@
+package com.com.scala.collection
+
+
+class SingleMemo {
+var arr1 = new Array[Int](5)
+  def fun(): Unit ={
+    for( a <- arr1){
+      println(a)
+    }
+    println("find value for first element " + arr1(0))
+    arr1(0) = 50
+    print("find value for first element after assignment " + arr1(0))
+  }
+}
+object Single12{
+  def main(args: Array[String]): Unit = {
+    val s = new SingleMemo()
+    s.fun()
+  }
+}
