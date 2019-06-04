@@ -1,0 +1,18 @@
+package com.com.traits.scala
+
+class PrivMod {
+  protected var n: Int = 24
+
+  def call(): Unit = {
+    println("this is raju age " + n)
+  }
+
+}
+object Priv {
+  def main(args:Array[String]): Unit ={
+
+    val p = new PrivMod()
+
+    p.call()
+  }
+}
