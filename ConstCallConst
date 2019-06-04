@@ -1,0 +1,18 @@
+package com.class1.object1
+
+//Constructor call constructor using this keyword
+
+class ConstCallConst(name:String) {
+  def this(name:String,age:Int){
+    this(name)
+    println(name + " "+ age)
+  }
+//
+}
+
+object Const {
+  def main(args:Array[String]): Unit ={
+    val C = new ConstCallConst("Jitu", 35)
+
+  }
+}
