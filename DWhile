@@ -1,0 +1,13 @@
+package com.class1.object1
+
+object DWhile {
+  def main(args: Array[String]): Unit = {
+    var b = 10;
+    do{
+      println(b)
+      b = b+2;
+    }
+    while (b<=16)
+  }
+
+}
