@@ -1,0 +1,23 @@
+package com.com.traits.scala
+
+//trait example
+
+trait Printable {
+  def run(): Unit ={
+
+  }
+
+}
+class P4 extends Printable{
+  override def run(){
+    println("hey this is universal feature of trait")
+  }
+}
+
+object MyPrint{
+  def main(args:Array[String]): Unit ={
+val p = new P4()
+    println(p.run())
+
+  }
+}
