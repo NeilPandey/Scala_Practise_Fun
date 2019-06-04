@@ -1,0 +1,19 @@
+package com.scala.inherit
+
+class MethOver {
+  def run(){
+    println("Ussain run like a ferrari")
+  }
+
+}
+class Cl extends MethOver{
+  override def run(){
+    println("Soomakar has been ever best runner for ferrari")
+  }
+}
+object Meth{
+  def main(args:Array[String]){
+    val n = new Cl()
+    n.run
+  }
+}
