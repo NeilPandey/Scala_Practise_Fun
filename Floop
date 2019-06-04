@@ -1,0 +1,12 @@
+package com.class1.object1
+
+object Floop {
+  def main(args: Array[String]): Unit = {
+
+    val res = check(2)
+    println(res)
+  }
+def check(a:Int) = {
+  if(a>0)1 else -1
+}
+}
