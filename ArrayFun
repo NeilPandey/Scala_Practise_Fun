@@ -1,0 +1,18 @@
+package com.com.scala.collection
+
+class ArrayFun {
+
+  def cal(arr: Array[Int]){
+    for (i <- arr) {
+      println(i)}
+      println("print the third element " + arr(2))
+  }
+}
+object Array1{
+  def main(args:Array[String]): Unit ={
+
+    val arr = Array(1,2,3,4,5)
+    val arr1 = new ArrayFun()
+    arr1.cal(arr)
+  }
+}
