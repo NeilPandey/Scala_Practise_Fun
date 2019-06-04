@@ -1,0 +1,17 @@
+package com.class1.object1
+
+//Singleton Object
+
+object MyObj {
+  def main(args:Array[String]): Unit ={
+   // println("print this singleton object")
+M.hello();
+  }
+
+}
+object M{
+  def hello(): Unit ={
+
+    println("print this singleton object")
+  }
+}
