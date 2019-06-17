@@ -1,0 +1,50 @@
+trait EON {
+  //abstract method
+  //non-abstract method
+  //getter, setter
+  //val (by default it is allowed to get)
+  //var (get, set)
+  //ternary operator's can not be used
+  def RFID(): Unit ={
+    println("All employee have to have Id card to enter")
+  }
+  def parking()   //abstract method
+
+}
+class ClusterA extends EON{
+
+  final val num_of_park = 10
+   def parking: Unit = {
+    println("only clusterA emp can avail this parking : " + num_of_park)
+  }
+  def canteen(): Unit ={
+    print("All food varieties avaiable for clusterA people")
+  }
+}
+class ClusterB extends EON {
+  val total_park = 100;
+
+  def parking: Unit = {
+    if(total_park>60 && 80<total_park)
+    {
+      println("more than 50% is full")
+    }
+    else
+    {
+      println("all the parking slots free")
+    }
+  }
+}
+object Cluster {
+  def main(args: Array[String]): Unit = {
+    val cb = new ClusterB()
+    val ca = new ClusterA()
+
+    ca.RFID()
+    ca.parking()
+    cb.RFID()
+    cb.parking()
+    println("performance perfect")
+
+  }
+}
