@@ -1,0 +1,13 @@
+object MainObject {  
+   def main(args: Array[String]) {  
+        var result = search ("Scala")  
+        print(result)  
+    }  
+    def search (a:Any):Any = a match{  
+        case 1  => println("One")  
+        case "Two" => println("Two")  
+        case "Scala" => println("Hello")  
+        case _ => println("No")  
+              
+        }  
+}  
