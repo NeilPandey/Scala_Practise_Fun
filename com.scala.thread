@@ -1,0 +1,129 @@
+class ThreadExample extends Thread{  
+override def run(){  
+println("Thread is running...");  
+}  
+}  
+object MainObject{  
+def main(args:Array[String]){  
+var t = new ThreadExample()  
+t.start()  
+}  
+}  
+
+class ThreadExample extends Runnable{  
+override def run(){  
+println("Thread is running...")  
+}  
+}  
+object MainObject{  
+def main(args:Array[String]){  
+var e = new ThreadExample()  
+var t = new Thread(e)  
+t.start()  
+}  
+}  
+
+class ThreadExample extends Thread{  
+override def run(){  
+for(i<- 0 to 5){  
+println(i)  
+Thread.sleep(500)  
+}  
+}  
+  
+}  
+  
+object MainObject{  
+def main(args:Array[String]){  
+var t1 = new ThreadExample()  
+var t2 = new ThreadExample()  
+t1.start()  
+t2.start()  
+
+class ThreadExample extends Thread{  
+override def run(){  
+for(i<- 0 to 5){  
+println(i)  
+Thread.sleep(500)  
+}  
+}  
+  
+}  
+object MainObject{  
+def main(args:Array[String]){  
+var t1 = new ThreadExample()  
+var t2 = new ThreadExample()  
+var t3 = new ThreadExample()  
+t1.start()  
+t1.join()  
+t2.start()  
+t3.start()  
+}  
+}  
+
+class ThreadExample() extends Thread{  
+override def run(){  
+for(i<- 0 to 5){  
+println(this.getName()+" - "+i)  
+Thread.sleep(500)  
+}  
+}  
+}  
+  
+object MainObject{  
+def main(args:Array[String]){  
+var t1 = new ThreadExample()  
+var t2 = new ThreadExample()  
+var t3 = new ThreadExample()  
+t1.setName("First Thread")  
+t2.setName("Second Thread")  
+t1.start()  
+t2.start()  
+}  
+}  
+
+class ThreadExample() extends Thread{  
+override def run(){  
+for(i<- 0 to 5){  
+println(this.getName())  
+println(this.getPriority())  
+Thread.sleep(500)  
+}  
+}  
+}  
+object MainObject{  
+def main(args:Array[String]){  
+var t1 = new ThreadExample()  
+var t2 = new ThreadExample()  
+t1.setName("First Thread")  
+t2.setName("Second Thread")  
+t1.setPriority(Thread.MIN_PRIORITY)  
+t2.setPriority(Thread.MAX_PRIORITY)  
+t1.start()  
+t2.start()  
+}  
+}  
+
+class ThreadExample() extends Thread{  
+override def run(){  
+for(i<- 0 to 5){  
+println(i)              
+Thread.sleep(500)  
+}  
+}  
+def task(){  
+for(i<- 0 to 5){  
+println(i)  
+Thread.sleep(200)  
+}  
+}  
+}  
+  
+object MainObject{  
+def main(args:Array[String]){  
+var t1 = new ThreadExample()  
+t1.start()  
+t1.task()           
+}  
+}  
+
